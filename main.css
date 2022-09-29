@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Nunito&family=RocknRoll+One&family=Wellfleet&display=swap');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+html{
+	font-size: 10px;
+}
+
+body{
+	font-family: 'Wellfleet', cursive;
+	color: white;
+}
+
+select{
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	color: inherit;
+	font-size: inherit;
+}
+option{
+	background-color: black;
+}
+select{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+
+/*fonts*/
+.font-header{
+	font-family: 'Inter', sans-serif;
+}
+.font-nav{
+	font-family: 'RocknRoll One', sans-serif;
+}
+.font-order{
+	font-family: 'Wellfleet', cursive;
+}
+.app_title{
+	letter-spacing: 0.1rem;
+	line-height: 62.5px;
+	font-weight: 600;
+	color: white;
+    margin-bottom: 4vw;
+    text-align: center;
+    font-size: 4.5vw;
+}
+.header_title{
+    font-size: 7vw;
+    line-height: 100px;
+    letter-spacing: 0.02rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 18vw;
+}
+.header_title::selection{
+	background-color: transparent;
+}
+/*fonts*/
+
+/*header ctyles started*/
+
+.main_img{
+	padding-bottom: 9vw;
+	background-size: cover;
+	background-image: url("./images/rectangle.png");
+}
+
+.header, .nav{
+	background-color: #00000061;
+}
+
+.header{
+	font-size: 2rem;
+}
+
+.header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container{
+	max-width: 1400px;
+	width: 100%;
+	margin: auto;
+	padding: 0 6rem;
+}
+.header_left{
+	display: flex;
+}
+.header_right{
+	display: flex;
+	gap:15px;
+}
+
+.header_right-title{
+	padding-right: 10px;
+	border-right: 2px solid white;
+	height: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.header_select{
+	padding-right: 20px;
+}
+
+/*header ctyles finished*/
+
+
+/*nav ctyles started*/
+.nav{
+	margin-top: 20px;
+	padding: 36px ;
+	color: #fff;
+	display: flex;
+	font-size: 20px;
+	justify-content: center;
+	cursor: pointer;
+	gap:100px;	
+}
+.nav_mobile{
+	display: none;
+}
+.home{
+	border-bottom: 2px solid white;
+}
+.nav a{
+	color: white;
+	text-decoration: none;
+}
+.nav_links{
+	display: flex;
+	gap:40px;
+}
+.nav_links-x{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	font-size: 60px;
+	background-color: transparent;
+	color: #fff;
+	border:0;
+	cursor: pointer;
+	display: none;	
+}
+/*nav ctyles finished*/
+
+/*ORDER STARTED*/
+
+.order {
+	display: flex;
+	background-color: #fff;
+	margin: auto;
+	width: 90%;
+	margin-top: 300px;
+	padding: 40px 20px;
+	color: black;
+	font-size: 20px;
+	justify-content: space-between;
+}
+
+.order_date{
+	display: flex;
+	gap:20px;
+}
+.order_date,
+.order_guests{
+	padding: 9px 17px;
+	background-color: #d9d9d9;
+}
+.order_btn{
+	border:none;
+	padding: 9px 44px;
+	color: white;
+	background-color: #ff7a00;
+	font-size: 20px;
+	cursor: pointer;
+}
+.calendar{
+	font-size: 20px;
+}
+/*ORDER FINISHED*/
+
+/*FOOTER STARTED*/
+.footer{
+	margin-bottom: 10px;
+	background-color:#4F3636; 
+	color:#fff;
+}
+.footer_logo{
+	width: 120px;
+	height:100px;
+	margin-bottom: 20px;
+}
+.footer_boxes{
+	padding: 50px 0;
+	display: grid;
+	grid-template-columns: 31% 15% 18%  26%;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	gap:50px;
+}
+.footer_box-title{
+	font-size: 30px;
+	letter-spacing: 0.02rem;
+	font-weight: 400;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.footer_links:not(.not){
+	display: flex;
+	flex-direction: column;
+	width: max-content;
+	margin: auto;
+	gap:11px;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.002rem;
+}
+.footer_link{
+	display: flex;
+	gap:20px;
+	align-items: center;
+}
+.footer_link i{
+	font-size: 25px;
+}
+
+.footer_links.not {
+	display: flex;
+	gap:10px;
+	flex-direction: column;
+}
+.copyright{
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.002rem;
+	padding: 5px 0 px;
+	border-top:2px solid #fff;
+	width: max-content;
+	margin: auto;
+}
+.copyright_text{
+	padding: 0 30px;
+}
+/*FOOTER FINISHED*/
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px){
+	.footer_boxes{
+		grid-template-columns: auto auto;
+	}
+	.footer_box-title{
+		text-align: start;
+	}
+	.footer_links:not(.not){
+		margin: 0 !important;
+	}
+	}
+	.footer_link{
+		gap:0px;
+	}
+	.footer{
+		position: relative;
+	    padding-top: 70px;
+	}
+	.footer_logo{
+		position: absolute;
+		top: 0;
+		left:50%;
+		transform: translate(-50%);
+	}
+}	

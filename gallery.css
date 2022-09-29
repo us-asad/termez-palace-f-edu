@@ -1,0 +1,29 @@
+.gallery{
+	    padding: 6vw 0 8vw;
+}
+.gallery_container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap:15px;
+	margin-bottom: 20px;
+}
+
+.gallery_container img{
+	width: 100%;
+}
+.gallery_button{
+	background-color: #D34B11;
+	color: #fff;
+	font-size: 1.6vw;
+	border:none;
+	padding: 5px 10px;
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (max-width: 450px){
+	.gallery .container{
+		padding: 0 1rem;
+	}
+}
