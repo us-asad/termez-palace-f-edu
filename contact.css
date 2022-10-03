@@ -1,0 +1,73 @@
+.contact{
+	color: black;
+	padding: 60px 0;
+}
+.contact_icn{
+	color: #ff4d00;
+	font-size: 18px;
+	padding: 10px;
+}
+.contact .container{
+	display: flex;
+	justify-content: space-between;
+	gap:150px;
+}
+.left_ct{
+	width: 40%;
+}
+.left_ct h2{
+	margin-left: 30px;
+	font-size: 40px;
+	font-weight: 400;
+}
+.left_ct p{
+	text-align: center;
+}
+.right_ct{
+	width: 65%;
+}
+.contact_input{
+	display: flex;
+	justify-content: space-between;
+}
+.contact_inpt{
+	width: 33%;
+    font-size: 12px;
+    padding: 5px;
+}
+.contact_sbjct{
+	width: 100%;
+	font-size: 12px;
+    padding: 5px;
+    margin: 15px 0;
+}
+.contact_txt{	
+	width: 100%;
+    height: 170px;
+    font-size: 12px;
+    padding: 7px;
+}
+.map-1{
+	height: 400px;
+}
+
+@media (max-width: 700px){
+	.contact .container{
+		flex-wrap: wrap;
+		gap:40px;
+	}
+	.right_ct{
+		width: 100%;
+	}
+	.left_ct{
+		width: 100%;
+	}
+	.left_ct h2{
+		text-align: center;
+	}
+}
+@media (max-width: 450px){
+	.contact_txt{
+		height: 100px;
+	}
+}

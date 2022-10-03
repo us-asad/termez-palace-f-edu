@@ -1,0 +1,144 @@
+.texts{
+	background-color: #fff;
+	padding: 90px 0 30px;
+}
+.texts .container{
+	display: flex;
+	justify-content: space-between;
+}
+.color-orange{
+	color: orange;
+}
+.texts_title{
+	font-size: 70px;
+	line-height: 87px;
+	letter-spacing: 0.02em;
+	width: 40%;
+	color: black;
+
+}
+.texts p{
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	width: 50%;
+	color: black;
+}
+
+
+.images{
+	background-color: #C9C9C9;
+	padding: 85px 0 83px;
+}
+
+.images .container{
+	/* display: grid;
+    grid-template-columns: 34% 34% 32%;*/
+        display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.images .container img{
+	width: 31%;
+	object-fit: cover;
+}
+.stats{
+	background-image: url("./images/Rectangle 44.png");
+	padding: 50px 0 150px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.stats_title{
+	font-size: 50px;
+	text-align: center;
+	font-weight: 400;
+}
+.stats_boxes{
+	display: flex;
+	gap:90px;
+	padding-top: 50px;
+	justify-content: center;
+}
+.stats_sum{
+	font-size: 50px;
+
+}
+.stats_name{
+	font-size: 30px;
+}
+
+
+@media (max-width: 1000px){
+	
+	.texts{
+		padding: 17px 0 30px;
+		flex-wrap: wrap;
+	}
+
+	.texts p{
+		width: 100%;
+
+	}
+	.texts_title{
+		width: 80%;
+		text-align: center;
+		margin-bottom: 20px;
+		font-size: 40px;
+		line-height: 63px;
+		margin: 0 auto 30px;
+	}
+
+	.texts .container{
+		flex-wrap: wrap;
+	}
+	.images .container{
+		 display: flex;
+	    flex-wrap: wrap;
+	    gap:20px;
+	}
+	.images .container img{
+		width: 48%;
+	}
+}
+
+@media (max-width: 620px){
+	.images .container img{
+		width: 100%;
+	}
+	.stats{
+		padding: 50px 0;
+	}
+	.stats_boxes{
+		text-align: center;
+		flex-wrap: wrap;
+		gap:50px;
+	}
+	.stats_title {
+		font-size: 30px;
+	}
+	.stats_sum{
+		font-size: 32px;
+	}
+	.stats_name {
+    	font-size: 13px;
+}
+}
+
+@media (max-width: 500px){
+	.container{
+		padding: 0 2rem;
+	}
+	.texts p{
+	line-height: 25px;
+     font-size: 18px;
+	}
+
+	.texts_title{
+		  font-size: 35px;
+   		 line-height: 46px;
+	}
+	.images .container{
+		 display: grid;
+	    grid-template-columns: 100%;
+	}
+}

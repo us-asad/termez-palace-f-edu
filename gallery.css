@@ -22,8 +22,17 @@
     transform: translate(-50%);
 }
 
+@media (max-width: 800px){
+	.gallery_container {
+	    grid-template-columns: auto auto ;
+	}    
+}
+
 @media (max-width: 450px){
 	.gallery .container{
-		padding: 0 1rem;
+		padding: 0 3rem;
+	}
+	.gallery_container {
+	    grid-template-columns: auto;
 	}
 }
